@@ -17,56 +17,48 @@ import Navbar from "../components/Navbar";
     <Navbar client:load />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
+      .lunarButton {
+        color: #1c1c1c;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 13px;
+      }
       .lunarHeader {
         color: #1349d3;
         font-family: "Lexend Giga";
         font-size: 46px;
         position: fixed;
-        top: 38%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      .lunarInput {
-        color: #1c1c1c;
+
+      .lunarCaptions {
+        color: #1349d3;
         font-family: "Lexend Giga";
-        font-size: 12px;
+        font-size: 16px;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 350px;
-        height: 45px;
-        border: none;
-        text-align: center;
       }
-      input::placeholder {
-        color: #1c1c1c;
-        font-family: "Lexend Giga";
-        font-size: 12px;
-        text-align: center;
-      }
-      input:focus {
-        outline-width: 0;
-      }
-
       body {
         background-color: #1c1c1c;
       }
     </style>
-    <h1 class="lunarHeader">Search</h1>
-    <div>
-      <form>
-        <input
-          type="text"
-          id="lunarSearch"
-          class="lunarInput placeholder-black-900 bg-black-50 text-black-900 text-sm rounded-lg block w-full p-2.5 dark:bg-blue-700 dark:placeholder-black-400"
-          placeholder="Search the web"
-          required
-        />
-      </form>
-    </div>
+    <h1 class="lunarHeader">404</h1>
+    <h1 class="lunarCaptions">Hey! You aren't supposed to be here...</h1>
+
     <Footer client:load />
-    <script is:inline src="/dip/dip.config.js"></script>
-    <script is:inline src="/dip/dip.page.js"></script>
+    <script>
+      const lunarButton: any = document.querySelector(".lunarButton");
+      lunarButton.addEventListener("click", () => {
+        window.location.href = "/search";
+      });
+    </script>
   </body>
 </html>
