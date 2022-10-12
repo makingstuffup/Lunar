@@ -1,5 +1,4 @@
 ---
-import Loader from "../components/Loader";
 import Footer from "../components/Footer";
 import Particle from "../components/Particle";
 import Navbar from "../components/Navbar";
@@ -59,5 +58,11 @@ import Navbar from "../components/Navbar";
       >Ready?</button
     >
     <Footer client:load />
+    <script>
+      const lunarButton: any = document.querySelector(".lunarButton");
+      lunarButton.addEventListener("click", () => {
+        window.location.href = "/search";
+      });
+    </script>
   </body>
 </html>
