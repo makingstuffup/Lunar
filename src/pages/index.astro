@@ -1,0 +1,63 @@
+---
+import Loader from "../components/Loader";
+import Footer from "../components/Footer";
+import Particle from "../components/Particle";
+import Navbar from "../components/Navbar";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lunar</title>
+  </head>
+  <body>
+    <Particle client:load />
+    <Navbar client:load />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
+      .lunarButton {
+        color: #1c1c1c;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 13px;
+      }
+      .lunarHeader {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 46px;
+        position: fixed;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .lunarCaptions {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      body {
+        background-color: #1c1c1c;
+      }
+    </style>
+    <h1 class="lunarHeader">Lunar</h1>
+    <h1 class="lunarCaptions">Escape the confines.</h1>
+    <button
+      type="button"
+      class="lunarButton bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >Ready?</button
+    >
+    <Footer client:load />
+  </body>
+</html>
