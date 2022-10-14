@@ -47,10 +47,16 @@ function Footer() {
   return (
     <>
       <style>{css}</style>
-      <h1 className="lunarFooterText1">© Astral 2022</h1>
-      <h1 className="lunarFooterText2">Credit</h1>
-      <h1 className="lunarFooterText3">Privacy</h1>
-      <h1 className="lunarFooterText4">TOS</h1>
+      <a className="lunarFooterText1">© Astral 2022</a>
+      <a className="lunarFooterText2" href="/credit">
+        Credit
+      </a>
+      <a className="lunarFooterText3" href="/privacy">
+        Privacy
+      </a>
+      <a className="lunarFooterText4" href="/tos">
+        TOS
+      </a>
     </>
   );
 }
