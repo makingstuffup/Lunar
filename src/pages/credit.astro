@@ -1,0 +1,165 @@
+---
+import Footer from "../components/Footer";
+import Particle from "../components/Particle";
+import Navbar from "../components/Navbar";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lunar</title>
+  </head>
+  <body>
+    <Particle client:load />
+    <Navbar client:load />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
+      .lunarButton {
+        color: #1c1c1c;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 13px;
+      }
+      .lunarHeader {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 46px;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .lunarCaptions {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      .tosbody1 {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      .tosheader1 {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 24px;
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      .tosbody2 {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 65%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      .tosheader2 {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 24px;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      .tosbody3 {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 16px;
+        position: fixed;
+        top: 85%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      .tosheader3 {
+        color: #1349d3;
+        font-family: "Lexend Giga";
+        font-size: 24px;
+        position: fixed;
+        top: 75%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+      }
+
+      body {
+        background-color: #1c1c1c;
+      }
+    </style>
+    <h1 class="lunarHeader">Credits</h1>
+    <h1 class="lunarCaptions">
+      Thanks to these people for helping Lunar exist and become what it is
+      today.
+    </h1>
+
+    <div class="tosbod">
+      <h1 class="tosheader1">Development</h1>
+      <h1 class="tosbody1">
+        > Frontend, Backend, and Design: pyro
+        <br />
+        <br />
+        > Sting: System32
+        <br />
+        <br />
+        > Dynamic Interception Proxy: Ender / Sylvie
+      </h1>
+      <h1 class="tosheader2">Sponsors</h1>
+      <h1 class="tosbody2">
+        > Our Donators 💖
+        <br />
+        <br />
+        > Our Boosters 💖
+      </h1>
+
+      <h1 class="tosheader3">Proxies Utilized</h1>
+      <h1 class="tosbody3">
+        > Xenon ⚡
+        <br />
+        <br />
+        > Sting 🐝
+        <br />
+        <br />
+        > Dynamic Interception Proxy 🧨
+      </h1>
+    </div>
+    <Footer client:load />
+  </body>
+</html>
