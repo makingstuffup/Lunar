@@ -14,7 +14,7 @@ import Navbar from "../components/Navbar.jsx";
   </head>
   <body>
     <Particle client:load />
-    <Navbar client:load />
+    <Navbar />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
       .lunarButton {
@@ -57,7 +57,7 @@ import Navbar from "../components/Navbar.jsx";
       class="lunarButton bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >Ready?</button
     >
-    <Footer client:load />
+    <Footer />
     <script>
       const lunarButton: any = document.querySelector(".lunarButton");
       lunarButton.addEventListener("click", () => {

@@ -2,6 +2,7 @@
 import Footer from "../components/Footer.jsx";
 import Particle from "../components/Particle.jsx";
 import Navbar from "../components/Navbar.jsx";
+import GameCards from "../components/GameCards.jsx";
 ---
 
 <html lang="en">
@@ -24,7 +25,7 @@ import Navbar from "../components/Navbar.jsx";
         font-family: "Lexend Giga";
         font-size: 46px;
         position: fixed;
-        top: 38%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -33,7 +34,7 @@ import Navbar from "../components/Navbar.jsx";
         font-family: "Lexend Giga";
         font-size: 12px;
         position: fixed;
-        top: 50%;
+        top: 28%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 350px;
@@ -55,19 +56,20 @@ import Navbar from "../components/Navbar.jsx";
         background-color: #1c1c1c;
       }
     </style>
-    <h1 class="lunarHeader">Search</h1>
+    <h1 class="lunarHeader">Games</h1>
     <div>
       <form>
         <input
           type="text"
           id="lunarSearch"
           class="lunarInput placeholder-black-900 bg-black-50 text-black-900 text-sm rounded-lg block w-full p-2.5 dark:bg-blue-700 dark:placeholder-black-400"
-          placeholder="Search the web"
+          placeholder="Search for a game"
           required
         />
       </form>
-      
     </div>
-    <Footer client:load />
+
+    <GameCards client:load />
+    <Footer />
   </body>
 </html>
